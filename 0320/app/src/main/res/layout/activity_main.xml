@@ -55,9 +55,20 @@
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:padding="20dp"
-        android:id="@+id/button"
         android:backgroundTint="#ff9800"
-        android:text="Button"/>
+        android:text="대학홈페이지"
+        android:onClick="onClick"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:padding="20dp"
+        android:id="@+id/button2"
+        android:backgroundTint="#ff9800"
+        android:text="리스너 객체 이벤트 처리"
+        />
+
 
 
 </LinearLayout>
