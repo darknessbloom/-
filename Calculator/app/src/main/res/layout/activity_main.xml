@@ -5,11 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#D1CCE0">
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Number1"/>
+        android:text="Calculator"
+        android:textStyle="italic"
+        android:textColor="#865FE2"
+        android:paddingVertical="20dp"
+        android:textSize="25pt"
+        android:backgroundTint="#D1CCE0"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number1"
+        android:textSize="15pt"/>
     <EditText
         android:id="@+id/n1"
         android:layout_width="match_parent"
@@ -19,7 +34,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Number2"/>
+        android:text="Number2"
+        android:textSize="15pt"/>
 
     <EditText
         android:id="@+id/n2"
@@ -27,6 +43,8 @@
         android:layout_height="wrap_content"
         android:hint="number2"
         />
+
+
     <Button
         android:id="@+id/plus"
         android:layout_width="300px"
@@ -51,10 +69,13 @@
         android:layout_height="wrap_content"
         android:text="/"
         />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Result"/>
+        android:text="Result"
+        android:gravity="center"
+        android:textSize="15pt"/>
     <EditText
         android:id="@+id/result"
         android:layout_width="match_parent"
