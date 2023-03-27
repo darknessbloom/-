@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Number1"
-        android:textSize="15pt"/>
+        />
     <EditText
         android:id="@+id/n1"
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Number2"
-        android:textSize="15pt"/>
+        />
 
     <EditText
         android:id="@+id/n2"
@@ -43,7 +43,6 @@
         android:layout_height="wrap_content"
         android:hint="number2"
         />
-
 
     <Button
         android:id="@+id/plus"

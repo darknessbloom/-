@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <Button
+           android:id="@+id/b1"
+           android:onClick="onClick"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Color1"
+           android:backgroundTint="#0000ff"/>
+       <Button
+           android:id="@+id/b2"
+           android:onClick="onClick"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Color2"
+           android:backgroundTint="#eff0"/>
+       <Button
+           android:id="@+id/b3"
+           android:onClick="onClick"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Color3"
+           android:backgroundTint="#00ff00"/>
+    </LinearLayout>
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView
+           android:id="@+id/v1"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="#3f51b5"/>
+       <TextView
+           android:id="@+id/v2"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="#eff0">
+
+       </TextView>
+       <TextView
+           android:id="@+id/v3"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="#00ff00">
+
+       </TextView>
+
+   </FrameLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
