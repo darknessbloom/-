@@ -14,49 +14,113 @@
         android:textSize="20pt"
         android:textColor="#687F3D"
         android:textAlignment="center"/>
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_gravity="center">
-        <ImageView
-            android:id="@+id/dice1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+        <FrameLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/dice1"
-            android:layout_gravity="center"/>
-        <ImageView
-            android:id="@+id/dice2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/dice2"
-            android:layout_gravity="center"/>
-        <ImageView
-            android:id="@+id/dice3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/dice3"
-            android:layout_gravity="center"/>
-        <ImageView
-            android:id="@+id/dice4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/dice4"
-            android:layout_gravity="center"/>
-        <ImageView
-            android:id="@+id/dice5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/dice5"
-            android:layout_gravity="center"/>
-        <ImageView
-            android:id="@+id/dice6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/dice6"
-            android:layout_gravity="center"/>
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/dice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dice1"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/dice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dice2"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/dice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dice3"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/dice4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dice4"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/dice5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dice5"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/dice6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dice6"
+                android:layout_gravity="center"/>
 
 
-    </FrameLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+
+
+            >
+            <ImageView
+                android:id="@+id/dice11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dice1"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/dice21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dice2"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/dice31"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dice3"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/dice41"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dice4"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/dice51"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dice5"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/dice61"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dice6"
+                android:layout_gravity="center"/>
+
+
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
     <Button
         android:id="@+id/roll"
         android:layout_width="wrap_content"
@@ -64,5 +128,27 @@
         android:layout_gravity="center"
         android:text="ROLL"
         android:onClick="onClick"/>
+    <Button
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="result"
+        android:onClick="anlayize"/>
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:onClick="reset"/>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/resultview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확률결과창"
+        android:textAlignment="center"
+        />
 
 </LinearLayout>
